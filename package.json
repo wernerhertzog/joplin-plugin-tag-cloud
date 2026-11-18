@@ -1,0 +1,33 @@
+{
+  "name": "joplin-plugin-tag-cloud",
+  "version": "0.2.3",
+  "private": true,
+  "description": "A tag cloud for Joplin desktop",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dist": "npm run build",
+    "test": "node --test",
+    "prepare": "npm run dist"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Werner Hertzog",
+  "license": "MIT",
+  "homepage": "https://github.com/wernerhertzog/joplin-plugin-tag-cloud#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wernerhertzog/joplin-plugin-tag-cloud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wernerhertzog/joplin-plugin-tag-cloud/issues"
+  },
+  "keywords": [
+    "joplin-plugin",
+    "tags",
+    "tag-cloud"
+  ],
+  "files": [
+    "publish"
+  ]
+}

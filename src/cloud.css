@@ -1,0 +1,17 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+html, body { height: 100%; overflow: hidden; }
+body { margin: 0; color: var(--joplin-color, #333); background: var(--joplin-background-color, transparent); font-family: var(--joplin-font-family, sans-serif); font-size: var(--joplin-font-size, 14px); }
+.tag-cloud-app { position: fixed; inset: 0; display: flex; flex-direction: column; padding: 12px; overflow: hidden; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+h1 { margin: 0; font-size: 1em; font-weight: 600; }
+button { font: inherit; color: inherit; }
+.refresh { width: 30px; height: 30px; padding: 0; border: 0; border-radius: 4px; background: transparent; cursor: pointer; font-size: 1.4em; }
+.refresh:hover, .tag:hover { background: var(--joplin-background-hover, rgba(128, 128, 128, .18)); }
+button:focus-visible, .cloud:focus-visible { outline: 2px solid var(--joplin-color-focus, #4484cf); outline-offset: 2px; }
+button:disabled { opacity: .5; cursor: wait; }
+.intro { margin: 3px 0 12px; opacity: .7; font-size: .85em; }
+.status { font-size: .9em; opacity: .8; }
+.status:empty { display: none; }
+.cloud { display: flex; flex: 1 1 0; min-height: 0; overflow-y: auto; overflow-x: hidden; flex-wrap: wrap; align-items: baseline; align-content: flex-start; gap: 4px 8px; }
+.tag { max-width: 100%; overflow-wrap: anywhere; border: 0; border-radius: 4px; background: transparent; padding: 2px 3px; line-height: 1.25; text-align: left; cursor: pointer; }
