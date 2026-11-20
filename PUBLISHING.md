@@ -1,11 +1,11 @@
 # Publishing Tag Cloud
 
-This project is prepared for Joplin's npm-based plugin discovery, but has not yet been published. The GitHub repository is initially private.
+Version 0.2.3 is published on npm. Joplin's plugin directory imports eligible packages separately; publication to npm does not guarantee or immediately confirm a directory listing.
 
-## Before the first release
+## Preparing a release
 
-1. Make the GitHub repository public when you are ready to share the source. Check that the author, copyright notice, repository URLs and version in `src/manifest.json` and `package.json` are correct.
-2. Verify the npm package name `joplin-plugin-tag-cloud` is available to your npm account. It was not present in the registry when checked, but availability can change.
+1. Ensure the GitHub repository is public and check that the author, copyright notice, repository URLs and version in `src/manifest.json` and `package.json` are correct.
+2. Confirm you have publishing access to `joplin-plugin-tag-cloud` and choose an unpublished version. Version 0.2.3 is already published.
 3. Test the `.jpl` in a Joplin development profile, including installation, scrolling, tag navigation, refresh, panel visibility and restarting. Test on other desktop operating systems before claiming verified support for them.
 4. Run:
 
